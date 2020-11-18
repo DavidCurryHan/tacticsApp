@@ -1,41 +1,28 @@
 <template>
-    <v-card
-            class="overflow-hidden mx-auto"
-            height="200"
-            max-width="500"
+    <v-bottom-navigation
+    horizontal
+    absolute
     >
-        <v-bottom-navigation
-                scroll-target="#scroll-area-1"
-                hide-on-scroll
-                absolute
-                horizontal
-        >
-            <v-btn text color="deep-purple accent-4">
-                <span>Recents</span>
-                <v-icon>mdi-history</v-icon>
-            </v-btn>
+        <v-btn>
+            <span>Composition</span>
+            <v-icon sytle= "margin-right: 0px">mdi-account-group</v-icon>
+        </v-btn>
 
-            <v-btn text color="deep-purple accent-4">
-                <span>Favorites</span>
-                <v-icon>mdi-heart</v-icon>
-            </v-btn>
+        <v-btn>
+            <span>Champion</span>
+            <v-icon>mdi-account</v-icon>
+        </v-btn>
 
-            <v-btn text color="deep-purple accent-4">
-                <span>Nearby</span>
-                <v-icon>mdi-map-marker</v-icon>
-            </v-btn>
-        </v-bottom-navigation>
+        <v-btn>
+            <span>Item</span>
+            <v-icon>mdi-knife-military</v-icon>
+        </v-btn>
 
-        <v-sheet
-                id="scroll-area-1"
-                class="overflow-y-auto"
-                max-height="600"
-        >
-            <v-container>
-
-            </v-container>
-        </v-sheet>
-    </v-card>
+        <v-btn>
+            <span>Patch Note</span>
+            <v-icon>mdi-calendar-text-outline</v-icon>
+        </v-btn>
+    </v-bottom-navigation>
 </template>
 <script>
     export default {
@@ -48,3 +35,32 @@
 </style>
 
 
+
+ <!-- this is for hiden navbar
+    <v-bottom-navigation
+      scroll-target="#scroll-area-1"
+      hide-on-scroll
+      horizontal
+      shift
+      absolute
+    >
+      <v-btn>
+        <span>Composition</span>
+        <v-icon sytle= "margin-right: 0px">mdi-account-group</v-icon>
+      </v-btn>
+
+      <v-btn>
+        <span>Champion</span>
+        <v-icon>mdi-account</v-icon>
+      </v-btn>
+
+      <v-btn>
+        <span>Item</span>
+        <v-icon>mdi-knife-military</v-icon>
+      </v-btn>
+
+      <v-btn>
+        <span>Patch Note</span>
+        <v-icon>mdi-calendar-text-outline</v-icon>
+      </v-btn>
+    </v-bottom-navigation> -->
